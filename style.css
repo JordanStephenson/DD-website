@@ -221,17 +221,17 @@ nav {
     color: #333;
 }
 .slide:first-child {
-    background: url(../IMG/event6) no-repeat;
+    background: url(IMG/event6) no-repeat;
     background-size: cover;
     background-position: center;
 }
 .slide:nth-child(2) {
-    background: url(../IMG/event7) no-repeat;
+    background: url(IMG/event7) no-repeat;
     background-size: cover;
     background-position: center;
 }
 .slide:nth-child(3) {
-    background: url(../IMG/katy-studio-edit.png) no-repeat;
+    background: url(IMG/katy-studio-edit.png) no-repeat;
     background-size: cover;
     background-position: center;
 }
