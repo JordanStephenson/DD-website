@@ -770,6 +770,14 @@
     
 }
 
+.img-btn-next {
+    right: 30px;
+}
+
+.img-btn-prev {
+    left: 30px;
+}
+
 .img-btn-next:hover {
  opacity: 0.8;
 }
