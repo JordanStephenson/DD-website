@@ -762,12 +762,12 @@
     padding: 6px 10px;
     background-color: #111;
     position: fixed;
-    bottom: 48vh;
+    bottom: 10vh;
     z-index: 500;
     font-family: 'Cinzel', serif;
     cursor: pointer;
     color: white;
-    display: none;
+    
 }
 
 .img-btn-next:hover {
@@ -850,7 +850,7 @@
     }
     /* Next image*/
     .img-btn-next, .img-btn-prev {
-        display: inherit;
+        bottom: 48vh;
     }
 
     #profile-footer {
