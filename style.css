@@ -9,6 +9,7 @@
 body {
     font-family: 'Cinzel', serif;
     background-color: #fff;
+    overflow-x: hidden;
 }
 nav {
     width: 100%;
@@ -93,6 +94,7 @@ nav {
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-top: 30px;
 }
 
 .logo img{
@@ -149,7 +151,6 @@ nav {
     overflow: hidden;
     height: 65vh;
     width: 100vw;
-    overflow-x: hidden;
 }
 .landing-page .title {
     position: absolute;
@@ -297,6 +298,10 @@ footer .footer-container {
 
     .logo-title{
         font-size: 18px;
+    }
+
+    .logo {
+        margin-bottom: 0px;
     }
 
     .logo img {
