@@ -1,0 +1,475 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Cinzel', serif;
+    background-color: #fff;
+}
+nav {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 15vh;
+    background-color: #fff;
+    z-index: 100;
+    position: fixed;
+}
+
+.social{
+    color: black;
+    height: 15px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+.social:hover{
+    opacity: 0.8;
+}
+.burger {
+    cursor: pointer;
+    position: absolute;
+    right: 5%;
+    top: 5%;
+}
+.burger div {
+    width: 20px;
+    height: 3px;
+    background-color: black;
+    margin: 5px;
+    transition: all 0.3s ease;
+}
+.hide-mobile {
+    display: none;
+  }
+
+  .nav-links {
+    list-style: none;
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+    top: 15vh;
+    right: 0;
+    text-align: left;
+    background: #dbdbdb;
+    height: 93vh;
+    z-index: 7;
+    text-align: center;
+    transform: translateX(100%);
+    transition: 0.5s ease-in;
+    padding: 100px 0px 150px 0px;
+  }
+
+  .nav-links a {
+    text-decoration: none;
+    color: black;
+    transition: all 0.2s ease-in-out;
+    font-size: 1em;
+}
+.nav-links li {
+    margin-top: 20%;
+    opacity: 0;
+
+}
+
+
+.nav-links .booking:hover,
+.nav-links a:hover {
+    opacity: 0.7;
+}
+.nav-links li:nth-child(1) {
+    margin-top: 0;
+}
+
+.logo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.logo img{
+    width: 30px;
+}
+.logo-title {
+    font-size: 14px
+}
+
+
+
+/* Nav animations*/
+
+.nav-active {
+    transform: translateX(0%);
+}
+
+@keyframes navLinkFade{
+    from {
+        opacity: 0;
+        transform: translateX(50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
+@keyframes fadeUp{
+    from {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+.toggle .line1 {
+    transform: rotate(-45deg) translate(-5px, 6px);
+}
+.toggle .line2 {
+    opacity: 0;
+}
+.toggle .line3 {
+    transform: rotate(45deg) translate(-5px, -6px);
+}
+
+.nav-links li:last-child {
+    padding: .5em;
+}
+
+.slider {
+    position: relative;
+    overflow: hidden;
+    height: 65vh;
+    width: 100vw;
+}
+.landing-page .title {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    z-index: 30;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    text-align: center;
+    
+}
+.landing-page .title h1 {
+    font-size: 36px;
+}
+
+.slider:after {
+    content: "";
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0.2;
+}
+.slide {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: opacity 0.4s ease-in-out;
+}
+
+.slide.current {
+    opacity: 1;
+}
+
+
+#primary-btn  {
+  cursor: pointer;
+  font-size: 15px;
+}
+#primary-btn:hover {
+    color: #333;  
+}
+.buttons button#next {
+    position: absolute;
+    top: 50%;
+    right: 15px;
+}
+
+.buttons button#prev {
+    position: absolute;
+    top: 50%;
+    left: 15px;
+}
+.buttons button {
+    border: 2px solid white;
+    background-color: transparent;
+    color: #fff;
+    cursor: pointer;
+    padding: 13px 15px;
+    border-radius: 50%;
+    outline: none;
+}
+.buttons button:hover {
+    background-color: #fff;
+    color: #333;
+}
+.slide:first-child {
+    background: url(../IMG/event6) no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.slide:nth-child(2) {
+    background: url(../IMG/event7) no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.slide:nth-child(3) {
+    background: url(../IMG/katy-studio-edit.png) no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+
+.welcome-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 20px 0px;
+    background-color: #fff;
+    color: black;
+}
+.welcome-section .container {
+    width: 80%;
+}
+
+.description {
+    font-family: cursive;
+    font-size: 15px;
+    font-family: 'Poppins', sans-serif;
+    line-height: 150%;
+}
+.cta {
+    margin: 30px 0px;
+}
+#primary-btn {
+    text-decoration: none;
+    color: black;
+    background: #F58823;
+    padding: 0.5em 1em;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+    font-family: 'Cinzel', sans-serif;
+    font-size: 1em;
+}
+
+#primary-btn:hover {
+    color: white;
+
+}
+
+footer .footer-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top: 1px solid black;
+    width: 90%;
+    margin: auto;
+}
+.social-links {
+    margin-top: 30px;
+}
+
+.social-links img {
+    width: 30px;
+}
+@media only screen and (min-width: 550px) {
+
+    .logo-title{
+        font-size: 18px;
+    }
+
+    .logo img {
+        width: 40px;
+    }
+    .nav-links li a {
+        font-size: 1em;
+      }
+
+    #primary-btn  {
+        font-size: 20px;
+      }
+
+    .welcome-section .container {
+       width: 80%;
+    }
+
+    .description {
+        font-size: 18px;
+    }
+
+    footer .footer-container {
+
+        justify-content: flex-end;
+       
+    }
+}
+@media only screen and (min-width: 900px) {
+    nav {
+        height: 19vh;
+        flex-direction: column;
+        justify-content: space-evenly;
+        position: inherit;
+        align-items: center;
+    }
+    .logo-title {
+        font-size: 18px;
+        margin-bottom: 20px;
+
+    }
+
+    
+    .nav-links li {
+        margin-top: 0;
+        opacity: 1;
+    }
+    .nav-links li a {
+        color: black;
+        background-color: inherit;
+        text-align: right;
+        margin: 0px;
+        font-size: 1em;
+      }
+    .nav-links li:last-child {
+        padding: 0;
+        width: initial;
+    }
+      .hide-desktop {
+        display: none;
+      }
+      .nav-links {
+        background: none;
+        height: auto;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        width: 70%;
+        position: inherit;
+        padding-top: 0px;
+        transform: translateX(0%);
+        padding-bottom: 0px;
+        margin-bottom: 20px;
+      }
+
+      
+    .burger {
+        display: none;
+    }
+ 
+
+    .slider {
+        height: 55vh;
+    }
+  
+    .landing-page .title h1{
+        font-size: 55px;
+        
+    }
+    .landing-page .title h3{
+        font-size: 25px;
+    }
+
+    .welcome-section .container{
+        display: flex;
+        align-items: center;
+        width: 90%;
+        margin: auto;
+        justify-content: space-between;
+        padding-bottom: 20px;
+    }
+    
+    .description {
+        text-align: left;
+        font-size: 15px;
+        margin-top: 20px;
+        width: 50%;
+        margin-right: auto;
+    }
+
+
+    .cta {
+        width: 50%;
+        align-items: center;
+        justify-content: flex-end;
+        display: flex;
+        flex-direction: column;
+        margin-top: auto;
+        margin-bottom: 2px;
+    }
+   
+
+    footer {
+        height: 5vh;
+    }
+
+    footer .footer-container {
+        justify-content: flex-end;
+    }
+    .social-links {
+      margin-top: 30px;
+    }
+
+}
+@media only screen and (min-width: 1700px) {
+    
+    .landing-page .slider {
+        height: 60vh;
+        width: 80%;
+        margin: auto;
+    }
+    
+    .landing-page .title h1{
+        font-size: 80px;
+    }
+    .landing-page .title h3{
+        font-size: 50px;
+    }
+    .welcome-section .container {
+        width: 70%;
+    }
+
+    .description {
+        font-size: 16px;
+
+    }
+    .description p, .headline h1{
+        width: 80%;
+        padding: 0px 20px;
+        margin: auto;
+    }
+    
+    footer .footer-container {
+        width: 70%;
+    }
+
+    .buttons button#next {
+        right: 11%;
+    }
+    
+    .buttons button#prev {
+        left: 11%;
+    }
+
+  
+}
+
+
+

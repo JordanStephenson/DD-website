@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../CSS/style.css">
+    <link rel="stylesheet" href="../CSS/artist.css">
+    <link rel="stylesheet" href="../CSS/profile.css">
+    <link rel="stylesheet" href="../CSS/contact.css">
+    <link href="https://fonts.googleapis.com/css?family=Dancing+Script&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/d4cecb7d2a.js" crossorigin="anonymous"></script>
+    <title>Delilah's Dagger</title>
+    <link rel="shortcut icon" type="image/png" href="../IMG/Icons/favicon.png">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <div class="logo-img">
+                    <img src="../IMG/DD-black-white 1.png" alt="">
+                </div>  
+            <div class="logo-title">
+                <h1>Delilah's Dagger</h1>
+            </div>
+        </div>
+            <ul class="nav-links show-desktop hide-mobile" id="nav">
+                <li><a href="../HTML/index.html">Home</a></li>
+                <li><a class="artists-link" href="../HTML/artist.html">Artists</a></li>
+                <li><a href="../HTML/piercing.html">Piercing</a></li>
+                <li><a href="../HTML/events.html">Events</a></li>
+                <li><a class="contact-link" href="../HTML/contact.html">Contact</a></li>
+                <li><a class="booking" href="../HTML/enquiries.html">Enquiries</a></li>
+            </ul>
+            <div class="burger hide-desktop">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
+        </nav>
+    </header>
+    <section class="wrapper">
+    <div class="title-section">
+        <h1>Contact</h1>
+    </div>
+    <div id="contact-hero" class="hero">
+        <div class="contact-container">
+        <div class="map-section">
+            <h1>Get in Touch</h1>
+            <img src="../IMG/contact.png" alt="">
+            <div class="contact-info">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita accusantium quod tenetur distinctio. Possimus recusandae illum ratione enim saepe ducimus.
+            </div>
+            <div id="map">
+
+            </div>
+        </div>
+        <div class="contact-section">
+            <div class="info">
+            <div class="address" >
+                <h2>Address</h2>
+                <p>DELILAH'S DAGGER
+                    311 SYDENHAM ROAD
+                    LONDON
+                    SE26 5EW
+                    <br><br>
+                     (+44) 020 3643 6938</p>
+            </div>
+            <div class="opening-times">
+                <h2>Opening-times</h2>
+                <p>TATTOO APPOINTMENTS : MON - SAT : 12.30 - 7.30PM
+                    <br><br>
+                    PIERCINGS: MON, WED - SATURDAY: 1PM - 6PM
+                    ​<br><br>
+                    *PLEASE NOTE EARLIER CLOSING TIMES ONCE ALL APPOINTMENTS HAVE BEEN SEEN TO</p>
+            </div>
+        </div>
+        <div id="contact-form" class="form">
+        <form action="contactform.php" method="POST">
+            <div class="input-group">
+                <label for="">Name:</label>
+                <input type="text" name="name">
+            </div>
+            <div class="input-group">
+                <label for="">Phone:</label>
+                <input type="tel" name="phone">
+            </div>
+            <div class="input-group">
+                <label>Email:</label>
+                <input type="email" name="mail">
+            </div>
+            <div class="input-group">
+                <label for="">Message:</label>
+                <input class="text-area" type="text-area" name="message">
+        </form>
+    </div>
+    
+        </div>
+        <div class="cta">
+            <a id="primary-btn" href="../HTML/enquiries.html">Submit</a>
+        </div>
+    </div>
+    </div>
+
+    </section>
+        <footer id="contact-footer">
+            <div class="footer-container">
+                <div class="social-links">
+                    <a href="https://www.facebook.com/Delilahsdaggertattoo/" target="_blank"><img src="../IMG/Icons/Vector.png" alt=""></a>
+                    <a href="https://www.instagram.com/delilahsdaggertattoo/" target="_blank"><img src="../IMG/Icons/Vector-1.png" alt=""></a>
+                </div>
+            </div>
+        </footer>
+        <script>
+            //Map options
+            function initMap(){
+                let options = {
+                    zoom: 15,
+                    center: {lat:51.4275993, lng:-0.0398935}
+                }
+                 //New map
+                let map = new google.maps.Map(document.getElementById('map'), options);
+        
+                 //Add marker
+                 let marker = new google.maps.Marker({
+                     position: {lat:51.4275993, lng:-0.0398935},
+                     map:map
+                 });
+        
+                 var infoWindow = new google.maps.InfoWindow({
+                     content: "<h1>Delialah's Dagger</h1>"
+                 });
+        
+                 marker.addListener('click', function(){
+                     infoWindow.open(map, marker);
+                 });
+            }
+        </script>
+        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA6zVEMNr6bcBoTl8dSJf12WnQtbvlKdyA&callback=initMap"
+        async defer></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TweenMax.min.js"></script>
+<script src="../Javascript/script.js"></script>
+</body>
+</html>

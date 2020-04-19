@@ -1,0 +1,141 @@
+.title-section {
+    height: 10vh;
+    width: 100%;
+    color: #000;
+    background-color: #dbdbdb;
+    transform: translateY(15vh);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 14px;
+}
+
+
+.hero {
+    width: 90%;
+    margin: auto;
+    transform: translateY(15vh);
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 50px 0px;
+}
+
+.artist {
+    margin-bottom: 40px;
+    height: 90%;
+    width: 90%;
+    position: relative;
+    cursor: pointer;
+    
+}
+
+.artist img:hover {
+    transform: scale(1.05);
+    transition: all 0.3s ease-in;
+}
+
+
+
+.artist img {
+    height: 100%;
+    width: 100%;
+}
+
+footer {
+    height: 7vh;
+    transform: translateY(15vh);
+}
+
+
+@media only screen and (min-width: 550px) {
+    .title-section {
+        font-size: 18px;
+    }
+}
+
+
+@media only screen and (min-width: 900px) {
+
+    .title-section {
+        height: 20vh;
+    }
+
+    .wrapper, .hero, .title-section {
+        transform: translatey(0);
+    }
+
+    .title-section {
+        font-size: 25px;
+        height: 15vh;
+    }
+    
+    .wrapper {
+        width: 100%;
+        background-color: #dbdbdb;
+        padding-bottom: 120px;
+        position: relative;
+    }
+    .hero {
+        padding: 100px 0px;
+    }
+    .hero, .artist {
+        width: 80%;
+    }
+    .artist {
+        margin-bottom: 80px;
+    }
+    .artist:last-child {
+        margin-bottom: 0px;
+    }
+    footer {
+        height: 7vh;
+        transform: translateY(0);
+    }
+
+    footer .footer-container {
+        border: none;
+    }
+
+}
+
+@media only screen and (min-width: 1300px) {
+
+    .hero {
+        padding: 100px 0px;
+        width: 70%;
+    }
+    .artist {
+        width: 80%;
+        height: 80%;
+        margin-bottom: 100px;
+    }
+
+
+}
+
+@media only screen and (min-width: 1600px) {
+
+    .hero {
+
+        width: 60%;
+    }
+   
+
+
+}
+
+@media only screen and (min-width: 1800px) {
+
+    .hero {
+
+        width: 50%;
+    }
+   
+
+
+}
+
+
