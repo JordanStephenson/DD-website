@@ -763,10 +763,10 @@
 }
 /* Next image*/
 .img-btn-next, .img-btn-prev {
-    padding: 6px 10px;
+    padding: 8px 12px;
     background-color: #111;
     position: fixed;
-    bottom: 10vh;
+    bottom: 5vh;
     z-index: 500;
     font-family: 'Cinzel', serif;
     cursor: pointer;
