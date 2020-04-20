@@ -21,6 +21,7 @@ nav {
     z-index: 100;
     position: fixed;
     padding-bottom: 30px;
+   
 }
 
 .social{
@@ -67,13 +68,14 @@ nav {
     transform: translateX(100%);
     transition: 0.5s ease-in;
     padding: 100px 0px 200px 0px;
+    
   }
 
   .nav-links a {
     text-decoration: none;
     color: black;
     transition: all 0.2s ease-in-out;
-    font-size: 1em;
+    font-size: 1.1em;
 }
 .nav-links li {
     margin-top: 20%;
@@ -96,9 +98,14 @@ nav {
     align-items: center;
     margin: 30px 0px;
 }
+.logo-link {
+    color: black;
+    text-decoration: none;
+}
 
 .logo img{
     width: 30px;
+    margin-bottom: 5px;
 }
 .logo-title {
     font-size: 14px
@@ -149,8 +156,14 @@ nav {
 .slider {
     position: relative;
     overflow: hidden;
-    height: 65vh;
+    height: 55vh;
     width: 100vw;
+}
+
+.landing-page {
+    padding-top: 15vh;
+    overflow: hidden;
+
 }
 .landing-page .title {
     position: absolute;
@@ -385,6 +398,10 @@ footer .footer-container {
 
     .slider {
         height: 55vh;
+    }
+
+    .landing-page {
+        padding-top: 10px;
     }
   
     .landing-page .title h1{

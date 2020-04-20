@@ -1,5 +1,5 @@
 .title-section {
-    height: 12vh;
+    height: 10vh;
     width: 100%;
     color: #000;
     background-color: #dbdbdb;
@@ -7,7 +7,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 16px;
+    font-size: 14px;
 }
 
 
@@ -49,6 +49,13 @@ footer {
     transform: translateY(15vh);
 }
 
+
+@media only screen and (min-width: 400px) {
+    .title-section {
+        font-size: 16px;
+        height: 12vh;
+    }
+}
 
 @media only screen and (min-width: 550px) {
     .title-section {
