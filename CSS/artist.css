@@ -101,7 +101,7 @@ footer {
     .artist:last-child {
         margin-bottom: 0px;
     }
-    footer {
+    #artist-footer {
         height: 7vh;
         transform: translateY(0);
     }
