@@ -82,7 +82,6 @@ if(galleryImages) {
                 container.appendChild(newPrevBtn);
                 newPrevBtn.setAttribute('class', 'img-btn-prev');
                 newPrevBtn.setAttribute('onclick', 'changeImg(0)');
-                newPrevBtn.style.cssText = 'left: '+ calcImgToEdge + 'px;';
     
                 let newNextBtn = document.createElement('a');
                 let btnNextText = document.createTextNode('Next');
@@ -92,9 +91,7 @@ if(galleryImages) {
                 container.appendChild(newNextBtn);
                 newNextBtn.setAttribute('class', 'img-btn-next');
                 newNextBtn.setAttribute('onclick', 'changeImg(1)');
-                newNextBtn.style.cssText = 'right: '+ calcImgToEdge + 'px;';
                 newNextBtn.style.animation = `navLinkFade 0.7s ease forwards`;
-                
             };
  
         });
