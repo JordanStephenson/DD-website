@@ -46,6 +46,10 @@
 
 footer {
     height: 7vh;
+
+}
+
+#artist-footer {
     transform: translateY(15vh);
 }
 
