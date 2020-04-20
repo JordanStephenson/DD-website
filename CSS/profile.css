@@ -1,9 +1,10 @@
 .wrapper {
-    overflow: hidden;
+    overflow-x: hidden;
 }
 
 #profile-hero {
     padding-top: 20px;
+    padding-bottom: 0px;
 }
 
 #primary-btn {

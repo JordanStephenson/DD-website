@@ -1,6 +1,6 @@
 .wrapper {
     padding-top: 15vh;
-    overflow: hidden;
+    overflow-x: hidden;
 }
 
 .banner {
@@ -85,7 +85,7 @@
     .wrapper {
         padding-top: 10px;
     }
-    
+
     .info {
         width: 40%;
         margin: 50px auto 50px 100px;
