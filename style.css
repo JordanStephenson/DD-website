@@ -67,18 +67,17 @@ nav {
     text-align: center;
     transform: translateX(100%);
     transition: 0.5s ease-in;
-    padding: 100px 0px 200px 0px;
-    
+    padding: 50px 0px;
   }
 
   .nav-links a {
     text-decoration: none;
     color: black;
     transition: all 0.2s ease-in-out;
-    font-size: 1.1em;
+    font-size: 1em;
 }
 .nav-links li {
-    margin-top: 20%;
+    margin: auto;
     opacity: 0;
 
 }
@@ -307,6 +306,8 @@ footer .footer-container {
 .social-links img {
     width: 30px;
 }
+
+
 @media only screen and (min-width: 550px) {
 
     .logo-title{
