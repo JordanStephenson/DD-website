@@ -2,12 +2,13 @@
     height: 10vh;
     width: 100%;
     color: #000;
-    background-color: #dbdbdb;
+    background-color: #c0c0c0;
     transform: translateY(15vh);
     display: flex;
     justify-content: center;
     align-items: center;
     font-size: 14px;
+    display: none;
 }
 
 
@@ -72,6 +73,7 @@ footer {
 
     .title-section {
         height: 20vh;
+        display: flex;
     }
 
     .wrapper, .hero, .title-section {
@@ -85,7 +87,7 @@ footer {
     
     .wrapper {
         width: 100%;
-        background-color: #dbdbdb;
+        background-color: #c0c0c0;
         padding-bottom: 120px;
         position: relative;
     }

@@ -2,7 +2,14 @@
 
 #enquiries-hero {
     width: 100%;
+    
 }
+
+#contact-hero {
+ padding-top: 50px;
+ border-top: solid #c9c9c9 1px;
+}
+
 .enquiries-info {
     width: 80%;
     text-align: center;

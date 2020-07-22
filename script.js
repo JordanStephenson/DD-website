@@ -71,7 +71,7 @@ tl.from('.wrapper .hero .artist', 0.5, {
 const slides = document.querySelectorAll('.slide');
 const next = document.querySelector('#next');
 const prev = document.querySelector('#prev');
-const auto = false;
+const auto = true;
 const intervalTime = 5000;
 let slideInterval;
 

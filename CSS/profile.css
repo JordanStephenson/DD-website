@@ -3,8 +3,7 @@
 }
 
 #profile-hero {
-    padding-top: 20px;
-    padding-bottom: 0px;
+    padding: 0px;
 }
 
 #primary-btn {
@@ -12,7 +11,7 @@
 }
 
 .cta {
-    margin-bottom: 40px;
+    margin-bottom: 50px;
 }
 
 .cta:last-child {
@@ -23,8 +22,12 @@
     text-align: center;
     width: 80%;
     font-size: .9em;
-    margin-bottom: 50px;
     font-family: 'Poppins', sans-serif;
+}
+
+.bio h2 {
+    margin-bottom: 10px;
+    font-size: 18px;
 }
 
 .gallery {
@@ -958,10 +961,15 @@
   
     #profile-hero {
         padding: 70px 0px;
+        border-top: solid #c9c9c9 1px;
+        width: 100%;
     }
     .bio {
-        width: 70%;
-
+        width: 60%;
+        margin-bottom: 50px;
+    }
+    .wrapper {
+        padding-bottom: 0px;
     }
 
     .gallery {
@@ -983,21 +991,17 @@
         bottom: 48vh;
     }
 
-    #profile-footer {
-        transform: translateY(0);
-        
-    }
-    
-    #profile-footer .footer-container {
-        border: none
-    }
+
 }
 
 @media only screen and (min-width: 1000px) {
     
     #profile-hero {
         padding: 70px 0px;
-        width: 90%;
+    }
+
+    .bio {
+        width: 50%;
     }
 
     #zipporah-gallery {
@@ -1021,12 +1025,15 @@
     
     #profile-hero {
         padding: 100px 0px;
-        width: 85%;
+    }
+
+    .bio h2 {
+        font-size: 22px;
     }
 
     .bio {
         font-size: 1.2em;
-        width: 60%;
+    
     }
 
     .gallery {
@@ -1048,8 +1055,8 @@
 
 @media only screen and (min-width: 1800px) {
     
-    #profile-hero {
-        width: 75%;
+    .bio {
+        width: 40%;
     }
 
 }
