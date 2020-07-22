@@ -32,7 +32,14 @@
     font-size: 14px;
 }
 .cta {
-    margin: 30px 0px 10px 0px;
+    margin: 50px 0px 10px 0px;
+}
+.quote {
+    font-family: 'Poppins', sans-serif;
+    width: 80%;
+    margin: 50px auto;
+    text-align: right;
+    font-weight: bold;
 }
 .gallery {
     width: 90%;
@@ -99,6 +106,15 @@
     .info p {
         margin-bottom: 30px;
     }
+    .cta {
+        margin-top: 30px;
+    }
+    .quote {
+        width: 49%;
+        margin: 0px 50px 100px auto;
+        text-align: right;
+        font-weight: bold;
+    }
 }
 
 @media only screen and (min-width: 1600px) {
@@ -116,7 +132,11 @@
 
     .info {
         width: 30%;
-        margin-left: 20%;
+        margin-left: 18%;
+    }
+    .quote {
+        width: 32%;
+        margin-right: 18%;
     }
 }
 
