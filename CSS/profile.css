@@ -30,6 +30,17 @@
     font-size: 18px;
 }
 
+.bio a {
+    text-decoration: none;
+    color: inherit;
+    opacity: 0.7;
+    transition: all 0.5s ease;
+}
+.bio a:hover {
+    opacity: 1;
+    color: #F2C2C2;
+}
+
 .gallery {
     display: grid;
     margin: auto;
