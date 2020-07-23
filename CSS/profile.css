@@ -1051,12 +1051,38 @@
         width: 50VW;
         
     }
+    .img-btn-next {
+        right: 300px;
+    }
+    
+    .img-btn-prev {
+        left: 300px;
+    }
 }
 
 @media only screen and (min-width: 1800px) {
     
     .bio {
         width: 40%;
+    }
+    .img-btn-next {
+        right: 350px;
+    }
+    
+    .img-btn-prev {
+        left: 350px;
+    }
+
+}
+@media only screen and (min-width: 2000px) {
+    
+
+    .img-btn-next {
+        right: 400px;
+    }
+    
+    .img-btn-prev {
+        left: 400px;
     }
 
 }

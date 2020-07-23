@@ -298,13 +298,15 @@ nav {
 
 footer .footer-container {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     border-top: 1px solid black;
     width: 90%;
     margin: auto;
 }
-.social-links {
+
+.social-links,
+.copywrite {
     margin-top: 30px;
 }
 
@@ -342,11 +344,6 @@ footer .footer-container {
         font-size: 18px;
     }
 
-    footer .footer-container {
-
-        justify-content: flex-end;
-       
-    }
 }
 @media only screen and (min-width: 900px) {
     nav {
@@ -452,9 +449,6 @@ footer .footer-container {
         height: 5vh;
     }
 
-    footer .footer-container {
-        justify-content: flex-end;
-    }
     .social-links {
       margin-top: 30px;
     }
@@ -482,11 +476,7 @@ footer .footer-container {
         font-size: 16px;
 
     }
-    .description p, .headline h1{
-        width: 80%;
-        padding: 0px 20px;
-        margin: auto;
-    }
+
     
     footer .footer-container {
         width: 70%;
@@ -499,8 +489,42 @@ footer .footer-container {
     .buttons button#prev {
         left: 11%;
     }
+    .buttons button {
+        border: 2px solid black;
+        color: #000;
+ 
+    }
+    .buttons button:hover {
+        background-color: #000;
+        color: #fff;
+    }
 
   
+}
+
+@media only screen and (min-width: 2000px) {
+    
+    nav {
+        width: 90%;
+        margin: auto;
+    }
+    .landing-page .slider {
+        width: 60%;
+
+    }
+    .welcome-section .container {
+        width: 60%;
+    }
+    footer .footer-container {
+        width: 60%;
+    }
+    .buttons button#next {
+        right: 15%;
+    }
+    
+    .buttons button#prev {
+        left: 15%;
+    }
 }
 
 

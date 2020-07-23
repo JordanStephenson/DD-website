@@ -151,4 +151,15 @@ footer {
 
 }
 
+@media only screen and (min-width: 2000px) {
+
+    .hero {
+
+        width: 40%;
+    }
+   
+
+
+}
+
 

@@ -50,10 +50,14 @@
     }
 
    #piercing-bio {
-       font-size: 1em;
+       font-size: .9em;
    }
+}
 
-   .price-list {
-       font-size: 1.2em;
-   }
+@media only screen and (min-width: 2000px) {
+
+    #piercing-hero {
+        width: 50%;
+    }
+
 }

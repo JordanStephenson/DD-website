@@ -117,11 +117,11 @@
     }
 }
 
-@media only screen and (min-width: 1600px) {
+@media only screen and (min-width: 1400px) {
     
     .banner {
         width: 75vw;
-        height: 70vh;
+        height: 65vh;
         margin: auto;
     }
     
@@ -145,6 +145,21 @@
     .banner {
         width: 65vw;
         
+    }
+
+}
+@media only screen and (min-width: 2000px) {
+
+    .banner {
+        width: 55vw;
+    }
+    .info {
+        width: 30%;
+        margin-left: 22%;
+    }
+    .quote {
+        width: 32%;
+        margin-right: 22%;
     }
 
 }
