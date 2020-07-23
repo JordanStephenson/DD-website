@@ -283,7 +283,7 @@ nav {
 #primary-btn {
     text-decoration: none;
     color: #fff;
-    background: #F58823;
+    background: rgb(250, 158, 158);
     padding: 0.5em 1em;
     border-radius: 5px;
     transition: all 0.3s ease;
