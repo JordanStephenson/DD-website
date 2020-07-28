@@ -313,7 +313,7 @@ footer .footer-container {
 }
 .copywrite {
     width: 60%;
-    font-size: 14px;
+    font-size: 11px;
 }
 
 .social-links img {
@@ -348,6 +348,9 @@ footer .footer-container {
 
     .description {
         font-size: 18px;
+    }
+    .copywrite {
+        font-size: 14px;
     }
 
 }
