@@ -248,7 +248,7 @@ nav {
 .slide:nth-child(3) {
     background: url(IMG/katy-studio-edit.png) no-repeat;
     background-size: cover;
-    background-position: center;
+    background-position: 0% 20%;
 }
 
 
@@ -304,11 +304,16 @@ footer .footer-container {
     border-top: 1px solid black;
     width: 90%;
     margin: auto;
+    font-family: 'Poppins', sans-serif;
 }
 
 .social-links,
 .copywrite {
     margin-top: 30px;
+}
+.copywrite {
+    width: 60%;
+    font-size: 14px;
 }
 
 .social-links img {
@@ -455,6 +460,19 @@ footer .footer-container {
     }
 
 }
+@media only screen and (min-width: 1400px){
+    .slide:nth-child(2) {
+        background: url(IMG/studio-edit.png) no-repeat;
+        background-size: cover;
+        background-position: 0% 40%;
+    }
+    .slide:nth-child(3) {
+        background: url(IMG/katy-studio-edit.png) no-repeat;
+        background-size: cover;
+        background-position: 0% 20%;
+    }
+}
+
 @media only screen and (min-width: 1700px) {
     
     .landing-page .slider {
