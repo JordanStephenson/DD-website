@@ -236,19 +236,21 @@ nav {
     color: #333;
 }
 .slide:first-child {
-    background: url(IMG/Depositphotos_202184304_l-2015.jpg) no-repeat;
-    background-size: cover;
-    background-position: center;
-}
-.slide:nth-child(2) {
-    background: url(IMG/studio-edit.png) no-repeat;
-    background-size: cover;
-    background-position: center;
-}
-.slide:nth-child(3) {
     background: url(IMG/katy-studio-edit.png) no-repeat;
     background-size: cover;
+    background-position: center;
     background-position: 0% 20%;
+}
+.slide:nth-child(2) {
+    background: url(IMG/leanne-img/img25.png) no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-position: 0% 80%;
+}
+.slide:nth-child(3) {
+    background: url(IMG/leanne-img/img8.png) no-repeat;
+    background-size: cover;
+    background-position: center;
 }
 
 
