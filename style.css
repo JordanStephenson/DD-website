@@ -399,8 +399,7 @@ footer .footer-container {
         position: inherit;
         padding-top: 0px;
         transform: translateX(0%);
-        padding-bottom: 0px;
-        margin-bottom: 20px;
+        padding-bottom: 20px;
       }
       
 
@@ -467,11 +466,6 @@ footer .footer-container {
 @media only screen and (min-width: 1400px){
     
   
-    .slide:nth-child(1) {
-        background: url(IMG/katy-studio-edit.png) no-repeat;
-        background-size: cover;
-        background-position: 0% 20%;
-    }
 }
 
 @media only screen and (min-width: 1700px) {
@@ -528,23 +522,14 @@ footer .footer-container {
         width: 90%;
         margin: auto;
     }
-    .landing-page .slider {
-        width: 60%;
-
-    }
+  
     .welcome-section .container {
         width: 60%;
     }
     footer .footer-container {
         width: 60%;
     }
-    .buttons button#next {
-        right: 15%;
-    }
-    
-    .buttons button#prev {
-        left: 15%;
-    }
+
 }
 
 
