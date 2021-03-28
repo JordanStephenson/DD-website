@@ -362,7 +362,10 @@ footer .footer-container {
         justify-content: space-evenly;
         position: inherit;
         align-items: center;
-        padding-bottom: 0px;
+        padding-bottom: 50px;
+    }
+    .logo {
+        padding-bottom: 20px;
     }
     .logo-title {
         font-size: 18px;
